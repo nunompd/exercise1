@@ -1,0 +1,26 @@
+<h1>My cool dashboard</h1>
+
+<!-- need to move this into a separate component -->
+<section>
+  <h2>Todo list</h2>
+
+  <form class="todo-list">
+    <section *ngFor="let item of todoItems; let i = index" class="todo-item">
+      <input id="todo-item-{{ i }}" type="checkbox" />
+      <label for="todo-item-{{ i }}">{{ item.name }}</label>
+    </section>
+  </form>
+</section>
+
+<hr />
+
+<h2>Some feature</h2>
+
+<p>Some feature here</p>
+
+<hr />
+
+<h2>Some other feature</h2>
+
+<p>Some other feature here</p>
+<hr />
